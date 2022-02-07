@@ -12,6 +12,7 @@ async function HandleSearch(event) {
     const response = await SearchNasa(searchTerm);
 
     document.getElementById("photo").src =response.collection.items[0].links[0].href;
+    document.getElementById("title").innerText = response.collection.items[0].data[0].title;
 
     console.log(response);
     // console.log(response.collection.items[0]);
