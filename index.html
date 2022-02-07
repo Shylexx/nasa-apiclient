@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8"><!--character encoding for the document (Unicode) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--Scale site to device-->
+    <link href="styles/normalize.css" rel="stylesheet"><!--Link normalize stylesheet-->
+    <link href="styles/stylesheet.css" rel="stylesheet"><!-- My Stylesheet -->
     <title>Nasa Images Database</title>
-    <script type="module" src="FormHandler.js"></script>
+    <script type="module" src="scripts/FormHandler.js"></script> <!-- Javascript Form Handler -->
 </head>
 
 <body>
 
+    <div id="wrapper">
+
+        <main>
 
     <form name="searchForm" id="searchForm" method="GET">
         <label for="searchTerm">Search Term</label>
@@ -18,6 +25,10 @@
     <img src="https://iconbjjbelfast.com/wp-content/uploads/2017/04/default-image.jpg" id="photo">
     <h1 id="title"></h1>
     <h3 id="description"></h3>
+    </div>
+
+    </main>
+
     </div>
 </body>
 </html>
